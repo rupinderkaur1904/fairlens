@@ -1,0 +1,39 @@
+
+=== Experiment A · skewed training (Group B share 5%) ===
+              n  accuracy  precision  recall_tpr    fpr    fnr  selection_rate
+Overall  3000.0     0.785      0.837       0.564  0.071  0.436           0.265
+Group A  1500.0     0.843      0.822       0.776  0.112  0.224           0.379
+Group B  1500.0     0.727      0.873       0.344  0.031  0.656           0.152
+{'accuracy_gap': 0.115, 'tpr_gap (equal opportunity)': 0.432, 'fpr_gap': 0.081, 'fnr_gap': 0.432, 'selection_rate_gap (demographic parity)': 0.227}
+
+=== Experiment A · representative training (Group B share 50%) ===
+              n  accuracy  precision  recall_tpr    fpr    fnr  selection_rate
+Overall  3000.0     0.823      0.794       0.742  0.125  0.258           0.368
+Group A  1500.0     0.809      0.759       0.767  0.164  0.233           0.406
+Group B  1500.0     0.837      0.838       0.715  0.087  0.285           0.329
+{'accuracy_gap': -0.028, 'tpr_gap (equal opportunity)': 0.052, 'fpr_gap': 0.077, 'fnr_gap': 0.052, 'selection_rate_gap (demographic parity)': 0.077}
+
+=== Experiment B · B1: Baseline (threshold 0.49999999999999994) ===
+              n  accuracy  precision  recall_tpr    fpr    fnr  selection_rate
+Overall  3000.0     0.814      0.771       0.762  0.151  0.238           0.396
+Group A  1500.0     0.815      0.719       0.880  0.229  0.120           0.489
+Group B  1500.0     0.813      0.855       0.645  0.073  0.355           0.303
+{'accuracy_gap': 0.001, 'tpr_gap (equal opportunity)': 0.235, 'fpr_gap': 0.155, 'fnr_gap': 0.235, 'selection_rate_gap (demographic parity)': 0.187}
+
+=== Experiment B · B2: Drop proxy (threshold 0.5149999999999999) ===
+              n  accuracy  precision  recall_tpr    fpr    fnr  selection_rate
+Overall  3000.0     0.782      0.747       0.691  0.156  0.309           0.370
+Group A  1500.0     0.779      0.743       0.685  0.158  0.315           0.369
+Group B  1500.0     0.785      0.751       0.696  0.155  0.304           0.372
+{'accuracy_gap': -0.006, 'tpr_gap (equal opportunity)': -0.011, 'fpr_gap': 0.003, 'fnr_gap': -0.011, 'selection_rate_gap (demographic parity)': -0.003}
+
+=== Experiment B · B3: Group thresholds (threshold {'A': 0.642, 'B': 0.37000000000000005}) ===
+              n  accuracy  precision  recall_tpr    fpr    fnr  selection_rate
+Overall  3000.0     0.823      0.795       0.750  0.129  0.250           0.378
+Group A  1500.0     0.822      0.785       0.765  0.140  0.235           0.390
+Group B  1500.0     0.823      0.807       0.736  0.118  0.264           0.366
+{'accuracy_gap': -0.001, 'tpr_gap (equal opportunity)': 0.029, 'fpr_gap': 0.022, 'fnr_gap': 0.029, 'selection_rate_gap (demographic parity)': 0.024}
+
+Baseline LR coefficients (standardised): {'qualification_score': np.float64(0.871), 'years_experience': np.float64(1.427), 'technical_score': np.float64(0.721)}
+
+Saved results/ (CSV tables + results.json)

@@ -1,0 +1,208 @@
+{
+  "A_skewed": {
+    "report": {
+      "Overall": {
+        "n": 3000.0,
+        "accuracy": 0.785,
+        "precision": 0.8367,
+        "recall_tpr": 0.5639,
+        "fpr": 0.0715,
+        "fnr": 0.4361,
+        "selection_rate": 0.2653
+      },
+      "Group A": {
+        "n": 1500.0,
+        "accuracy": 0.8427,
+        "precision": 0.8222,
+        "recall_tpr": 0.7757,
+        "fpr": 0.1125,
+        "fnr": 0.2243,
+        "selection_rate": 0.3787
+      },
+      "Group B": {
+        "n": 1500.0,
+        "accuracy": 0.7273,
+        "precision": 0.8728,
+        "recall_tpr": 0.3437,
+        "fpr": 0.0315,
+        "fnr": 0.6563,
+        "selection_rate": 0.152
+      }
+    },
+    "gaps": {
+      "accuracy_gap": 0.11533333333333329,
+      "tpr_gap (equal opportunity)": 0.4320514806717964,
+      "fpr_gap": 0.08098464678414331,
+      "fnr_gap": 0.43205148067179644,
+      "selection_rate_gap (demographic parity)": 0.22666666666666666
+    },
+    "share_b": 0.05
+  },
+  "A_representative": {
+    "report": {
+      "Overall": {
+        "n": 3000.0,
+        "accuracy": 0.8227,
+        "precision": 0.7942,
+        "recall_tpr": 0.7417,
+        "fpr": 0.1248,
+        "fnr": 0.2583,
+        "selection_rate": 0.3677
+      },
+      "Group A": {
+        "n": 1500.0,
+        "accuracy": 0.8087,
+        "precision": 0.7586,
+        "recall_tpr": 0.7674,
+        "fpr": 0.1637,
+        "fnr": 0.2326,
+        "selection_rate": 0.406
+      },
+      "Group B": {
+        "n": 1500.0,
+        "accuracy": 0.8367,
+        "precision": 0.8381,
+        "recall_tpr": 0.715,
+        "fpr": 0.0869,
+        "fnr": 0.285,
+        "selection_rate": 0.3293
+      }
+    },
+    "gaps": {
+      "accuracy_gap": -0.028000000000000025,
+      "tpr_gap (equal opportunity)": 0.05241595372936503,
+      "fpr_gap": 0.0768349982709798,
+      "fnr_gap": 0.052415953729365,
+      "selection_rate_gap (demographic parity)": 0.07666666666666672
+    },
+    "share_b": 0.5
+  },
+  "B1": {
+    "label": "Baseline",
+    "threshold": 0.5,
+    "report": {
+      "Overall": {
+        "n": 3000.0,
+        "accuracy": 0.814,
+        "precision": 0.771,
+        "recall_tpr": 0.7621,
+        "fpr": 0.1513,
+        "fnr": 0.2379,
+        "selection_rate": 0.396
+      },
+      "Group A": {
+        "n": 1500.0,
+        "accuracy": 0.8147,
+        "precision": 0.7193,
+        "recall_tpr": 0.88,
+        "fpr": 0.2289,
+        "fnr": 0.12,
+        "selection_rate": 0.4893
+      },
+      "Group B": {
+        "n": 1500.0,
+        "accuracy": 0.8133,
+        "precision": 0.8546,
+        "recall_tpr": 0.6445,
+        "fpr": 0.0735,
+        "fnr": 0.3555,
+        "selection_rate": 0.3027
+      }
+    },
+    "gaps": {
+      "accuracy_gap": 0.0013333333333332975,
+      "tpr_gap (equal opportunity)": 0.23548172757475083,
+      "fpr_gap": 0.1553922296461272,
+      "fnr_gap": 0.23548172757475083,
+      "selection_rate_gap (demographic parity)": 0.1866666666666667
+    },
+    "coef": {
+      "qualification_score": 0.871,
+      "years_experience": 1.427,
+      "technical_score": 0.721
+    }
+  },
+  "B2": {
+    "label": "Drop proxy",
+    "threshold": 0.515,
+    "report": {
+      "Overall": {
+        "n": 3000.0,
+        "accuracy": 0.7823,
+        "precision": 0.7471,
+        "recall_tpr": 0.6905,
+        "fpr": 0.1563,
+        "fnr": 0.3095,
+        "selection_rate": 0.3703
+      },
+      "Group A": {
+        "n": 1500.0,
+        "accuracy": 0.7793,
+        "precision": 0.7432,
+        "recall_tpr": 0.685,
+        "fpr": 0.1578,
+        "fnr": 0.315,
+        "selection_rate": 0.3687
+      },
+      "Group B": {
+        "n": 1500.0,
+        "accuracy": 0.7853,
+        "precision": 0.7509,
+        "recall_tpr": 0.696,
+        "fpr": 0.1548,
+        "fnr": 0.304,
+        "selection_rate": 0.372
+      }
+    },
+    "gaps": {
+      "accuracy_gap": -0.006000000000000005,
+      "tpr_gap (equal opportunity)": -0.011013289036544749,
+      "fpr_gap": 0.002989359069537234,
+      "fnr_gap": -0.01101328903654486,
+      "selection_rate_gap (demographic parity)": -0.003333333333333355
+    }
+  },
+  "B3": {
+    "label": "Group thresholds",
+    "threshold": {
+      "A": 0.642,
+      "B": 0.37000000000000005
+    },
+    "report": {
+      "Overall": {
+        "n": 3000.0,
+        "accuracy": 0.8227,
+        "precision": 0.7954,
+        "recall_tpr": 0.7504,
+        "fpr": 0.129,
+        "fnr": 0.2496,
+        "selection_rate": 0.378
+      },
+      "Group A": {
+        "n": 1500.0,
+        "accuracy": 0.822,
+        "precision": 0.7846,
+        "recall_tpr": 0.765,
+        "fpr": 0.14,
+        "fnr": 0.235,
+        "selection_rate": 0.39
+      },
+      "Group B": {
+        "n": 1500.0,
+        "accuracy": 0.8233,
+        "precision": 0.8069,
+        "recall_tpr": 0.7359,
+        "fpr": 0.118,
+        "fnr": 0.2641,
+        "selection_rate": 0.366
+      }
+    },
+    "gaps": {
+      "accuracy_gap": -0.0013333333333334085,
+      "tpr_gap (equal opportunity)": 0.029119601328903677,
+      "fpr_gap": 0.021959910913140326,
+      "fnr_gap": 0.029119601328903677,
+      "selection_rate_gap (demographic parity)": 0.02400000000000002
+    }
+  }
+}
